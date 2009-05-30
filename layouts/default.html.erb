@@ -15,14 +15,6 @@
 		<h2><%= this_blog.blog_subtitle %></h2>
 	</div>
 	
-	<div id="search">
-		<%= start_form_tag({:controller => 'articles',  :action => 'search'}, {:method => 'get', :id => 'sform'}) %>
-        <label for="q">Live Search:</label>
-		<input type="text" id="q" name="q" value="" size="15" />
-        <%= image_tag "/images/theme/spinner.gif", :id => 'search_spinner', :style => 'display: none;' %>
-        <%= end_form_tag %>	
-	</div>
-	
 	<div id="content">
 	
 		<div id="content-inner">
@@ -38,15 +30,6 @@
 	
 		<div id="navigation-content">
 		
-			<div id="search-results"></div>
-
-			<%= observe_field "q", 
-				:frequency => 1, 
-				:url => { :controller => "live", :action => "search" }, 
-				:loading => "Element.show('search_spinner')",
-				:complete => "Element.hide('search_spinner')",
-				:update => "search-results" -%>
-			
 			<%= render_sidebars %>
 			
 			<%= link_to image_tag("powered.gif"),  "http://typo.leetsoft.com/", {:class => "powered" } %>	
