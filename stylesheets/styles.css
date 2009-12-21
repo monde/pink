@@ -26,7 +26,7 @@ a:hover {
 div#wrapper {
 	margin: 0 auto 0 auto;
 	background: url(../../images/theme/wrapper-bg.jpg) top right no-repeat;
-	width: 818px;
+	width: 918px;
 	position: relative;
 }
 
@@ -38,7 +38,7 @@ div#header {
 	height: 88px;
 	position: relative;
 	color: #fff;
-	width: 818px;
+	width: 918px;
 }
 
 /* blog title */
@@ -72,7 +72,7 @@ div#header h2 {
  *------------------------------------------*/
 div#content {
 	float: left;
-	width: 594px;
+	width: 694px;
 	line-height: 1.4em;
 }
 
@@ -188,7 +188,7 @@ div#content-inner {
  *------------------------------------------*/
 div#navigation {
 	padding-top: 30px;
-	margin-left: 624px;
+	margin-left: 724px;
 	width: 180px;
 	font-size: 0.9em;
 }
